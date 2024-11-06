@@ -10,7 +10,7 @@
     если страница открыта с мобилки то хэдер для десктопа будет иметь display:none и наоборот-->
     <div class="header-for-desktop">
         <button>go back</button>
-        <nav>
+        <nav class="navigation">
             <ul>
                 <li><a href="">story</a></li>
                 <li><a href="">shop</a></li>
@@ -26,7 +26,7 @@
         <button><img src="assets/images/vector/menu.svg" alt="sign of menu"></button>
         <img src="assets/images/vector/mobile_logo.svg" alt="logo for mobile">
         <button><img src="assets/images/vector/users.svg" alt="sign of users"></button>
-        <nav>
+        <nav class="navigation">
             <ul>
                 <li><a href="">story</a></li>
                 <li><a href="">shop</a></li>
@@ -56,9 +56,7 @@
             <img src="assets/images/small/syrup_around_cups_small.jpg" alt="syrup around cups">
         </picture>
 
-        <div class="container container-for-h1">
-            <h1>THE FIRST HOT SAUCE MADE FOR COFFEE</h1>
-        </div>
+        <h1>THE FIRST HOT SAUCE MADE FOR COFFEE</h1>
 
         <picture>
             <source media="(min-width: 1440px)" srcset="assets/images/large/syrup_in_hand_large.jpg">
@@ -75,14 +73,43 @@
         </div>
 
         <div class="container container-for-cards">
-            <ul>
-                <li><img src="assets/images/vector/card_of_syrup_with_purple_label.svg"
-                         alt="product card of syrup with purple label"></li>
-                <li><img src="assets/images/vector/card_of_two_syrups.svg"
-                         alt="product card of two syrups"></li>
-                <li><img src="assets/images/vector/card_of_syrup_with_pink_label.svg"
-                         alt="product card of syrup with pink label"></li>
-            </ul>
+            <img src="assets/images/vector/fire_in_round.svg" alt="picture of fire">
+
+            <div class="product-card">
+                <img src="assets/images/vector/product_card_background.svg" alt="product card background">
+                <p class="product-description">tangy and tingly</p>
+                <p class="product-name">LIGHT ROAST BLEND</p>
+                <picture class="product-photo">
+                    <source media="(min-width: 1440px)" srcset="assets/images/large/syrup_with_purple_label_large.png">
+                    <img src="assets/images/small/syrup_with_purple_label_small.png" alt="syrup with purple label">
+                </picture>
+            </div>
+
+            <img src="assets/images/vector/fire_in_rectangle.svg" alt="picture of fire">
+
+            <div class="product-card">
+                <img src="assets/images/vector/product_card_background.svg" alt="product card background">
+                <p class="product-description">light & dark roast</p>
+                <p class="product-name">UJJO SAMPLER PACK</p>
+                <picture class="product-photo">
+                    <source media="(min-width: 1440px)" srcset="assets/images/large/two_syrups_large.png">
+                    <img src="assets/images/small/two_syrups_small.png" alt="two syrups">
+                </picture>
+            </div>
+
+            <img src="assets/images/vector/fire_in_rectangle.svg" alt="picture of fire">
+
+            <div class="product-card">
+                <img src="assets/images/vector/product_card_background.svg" alt="product card background">
+                <p class="product-description">tangy and tingly</p>
+                <p class="product-name">DARK ROAST BLEND</p>
+                <picture class="product-photo">
+                    <source media="(min-width: 1440px)" srcset="assets/images/large/syrup_with_pink_label_large.png">
+                    <img src="assets/images/small/syrup_with_pink_label_small.png" alt="syrup with pink label">
+                </picture>
+            </div>
+
+            <img src="assets/images/vector/fire_in_round.svg" alt="picture of fire">
         </div>
 
         <div class="container container-for-running-line">
