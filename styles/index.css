@@ -1,1 +1,203 @@
-/* Здесь будут ваши стили для элементов лендинга. Удалите этот комментарий при начала разработки */
+* {
+    text-transform: uppercase;
+    font-family: 'RobotoFont', sans-serif;
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+}
+
+main {
+    margin-top: 6vw;
+    width: 100vw;
+    border: solid 0.1vw black;
+}
+
+/*стилизация хедера*/
+.header-for-mobile {
+    display:none;
+}
+.header-for-desktop {
+    top: 0;
+    position: fixed;
+    background-color: white;
+    z-index: 3;
+    width: 100vw;
+    border-bottom: solid 0.1vw black;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+ul li a, ul li button {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 1vw;
+}
+ul li {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.logo {
+    height: 4vw;
+    width: 12vw;
+}
+
+
+/*стилизация секций*/
+.section {
+    display: grid;
+    border: solid 0.1vw black;
+}
+.section > * {
+    border: solid 0.1vw black;
+}
+
+
+/*стилизация верхней секции*/
+.info-section {
+    display: flex;
+    width: 100vw;
+}
+.left-column, .right-column {
+    display: inline-block;
+    width: 50vw;
+}
+
+.left-column img, .right-column img {
+    width: 48vw;
+    padding: 1vw;
+}
+h1 {
+    border: solid 0.1vw black;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 4vw;
+    text-align: center;
+}
+
+/*cтилизация бегущих строк и строки со слоганом*/
+.container-for-bottom-running-line, .container-for-running-line, .container-for-slogan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    border: solid 0.1vw black;
+}
+.container-for-bottom-running-line img, .container-for-running-line img {
+    width: 10vw;
+}
+.container-for-running-line {
+    width: 50vw;
+}
+.container-for-running-line p, .container-for-bottom-running-line p {
+    font-size: 1.7vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+.container-for-slogan > * {
+    font-size: 3.5vw;
+    margin: 4vw;
+    text-align: center;
+}
+
+/*стилизация карточек товара*/
+.container-for-cards {
+    justify-content: space-around;
+    display: flex;
+    width: 100vw;
+}
+.product-card {
+    position: relative;
+    display: grid;
+    padding: 2vw;
+}
+.container-for-product-info {
+    position: absolute;
+    z-index: 1;
+    top: 8vw;
+    left: 3.3vw;
+    text-align: center;
+}
+.product-description {
+    font-size: 1.2vw;
+    margin: 1vw;
+}
+.product-name{
+    font-size: 1.7vw;
+    margin: 1vw;
+}
+
+
+/*cтилизация предпоследней секции*/
+.story-section {
+    display: flex;
+    width: 100vw;
+}
+.container-for-story h2 {
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    text-align: center;
+    font-size: 3.5vw;
+}
+.container-for-story img {
+    width: 49.9vw;
+}
+.container-for-story-card{
+    display: flex;
+    position: relative;
+    border: solid 0.1vw black;
+    border-bottom: none;
+    width: 50vw;
+    height: 50vw;
+}
+.container-for-story-card h3 {
+    position: absolute;
+    z-index: 2;
+    width: 30vw;
+    height: 31vw;
+    font-size: 1.34vw;
+    text-align: center;
+    word-break: break-word;
+    top: 11vw;
+    left: 10vw;
+}
+.container-for-story-card img, .container-for-story {
+    width: 50vw;
+    height: 50vw;
+}
+
+
+/*cтилизация последней секции*/
+.bottom-foreign-text {
+/*    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    display: grid;*/
+}
+.decor-section {
+    position: relative;
+}
+
+/*стилизация футера*/
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary);
+    width: 100vw;
+}
+footer {
+    border: solid 0.1vw black;
+}
