@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
@@ -47,7 +48,7 @@
     <section id="top" class="section info-section">
         <div class="left-column">
             <picture>
-                <source media="(min-width: 1024px)" srcset="assets/images/vector/foreign_text_desktop.svg">
+                <source media="(min-width: 414px)" srcset="assets/images/vector/foreign_text_desktop.svg">
                 <img src="assets/images/vector/foreign_text_mobile.svg" alt="foreign text">
             </picture>
             <div class="container container-for-running-line">
@@ -75,55 +76,51 @@
             <p>THROW SOME LAVA IN YOUR JAVA</p>
             <img src="assets/images/vector/scorpion_looks_left.svg" alt="picture of scorpion which looks left">
         </div>
-        <div class="container container-for-cards">
-            <img src="assets/images/vector/fire_in_round.svg" alt="picture of fire">
-            <div class="product-card">
-                <img src="assets/images/vector/product_card_background.svg" alt="product card background">
-                <div class="container-for-product-info">
-                    <p class="product-description">tangy and tingly</p>
-                    <p class="product-name">LIGHT ROAST BLEND</p>
-                    <picture class="product-photo">
-                        <source media="(min-width: 1440px)"
-                                srcset="assets/images/large/syrup_with_purple_label_large.png">
-                        <img src="assets/images/small/syrup_with_purple_label_small.png" alt="syrup with purple label">
-                    </picture>
+        <div class="container-for-products-cards-and-fires">
+            <div class="container-for-fires">
+                <img src="assets/images/vector/fire_in_round.svg" alt="picture of fire">
+                <img src="assets/images/vector/fire_in_rectangle.svg" alt="picture of fire">
+                <img src="assets/images/vector/fire_in_rectangle.svg" alt="picture of fire">
+                <img src="assets/images/vector/fire_in_round.svg" alt="picture of fire">
+            </div>
+            <div class="container-for-cards">
+                <div class="product-card">
+                    <img src="assets/images/vector/product_card_background.svg" alt="product card background">
+                    <div class="container-for-product-info">
+                        <p class="product-description">tangy and tingly</p>
+                        <p class="product-name">LIGHT ROAST BLEND</p>
+                        <img src="assets/images/vector/syrup_with_purple_label.svg"
+                             alt="syrup with purple label">
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/vector/product_card_background.svg" alt="product card background">
+                    <div class="container-for-product-info">
+                        <p class="product-description">light & dark roast</p>
+                        <p class="product-name">UJJO SAMPLER PACK</p>
+                        <img src="assets/images/vector/two_syrups.svg" alt="two syrups">
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/vector/product_card_background.svg" alt="product card background">
+                    <div class="container-for-product-info">
+                        <p class="product-description">tangy and tingly</p>
+                        <p class="product-name">DARK ROAST BLEND</p>
+                        <img src="assets/images/vector/syrup_with_pink_label.svg" alt="syrup with pink label">
+                    </div>
                 </div>
             </div>
-            <img src="assets/images/vector/fire_in_rectangle.svg" alt="picture of fire">
-            <div class="product-card">
-                <img src="assets/images/vector/product_card_background.svg" alt="product card background">
-                <div class="container-for-product-info">
-                    <p class="product-description">light & dark roast</p>
-                    <p class="product-name">UJJO SAMPLER PACK</p>
-                    <picture class="product-photo">
-                        <source media="(min-width: 1440px)" srcset="assets/images/large/two_syrups_large.png">
-                        <img src="assets/images/small/two_syrups_small.png" alt="two syrups">
-                    </picture>
-                </div>
-            </div>
-            <img src="assets/images/vector/fire_in_rectangle.svg" alt="picture of fire">
-            <div class="product-card">
-                <img src="assets/images/vector/product_card_background.svg" alt="product card background">
-                <div class="container-for-product-info">
-                    <p class="product-description">tangy and tingly</p>
-                    <p class="product-name">DARK ROAST BLEND</p>
-                    <picture class="product-photo">
-                        <source media="(min-width: 1440px)"
-                                srcset="assets/images/large/syrup_with_pink_label_large.png">
-                        <img src="assets/images/small/syrup_with_pink_label_small.png" alt="syrup with pink label">
-                    </picture>
-                </div>
-            </div>
-            <img src="assets/images/vector/fire_in_round.svg" alt="picture of fire">
         </div>
         <div class="container container-for-bottom-running-line">
             <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
             <p>put some fire in your belly</p>
         </div>
         <picture>
-            <source media="(min-width: 1440px)" srcset="assets/images/large/syrup_in_cup_large.jpg">
-            <source media="(min-width: 1024px)" srcset="assets/images/medium/syrup_in_cup_medium.jpg">
-            <img src="assets/images/small/syrup_in_cup_small.jpg" alt="syrup in cup">
+            <source class="products-section-img" media="(min-width: 1440px)"
+                    srcset="assets/images/large/syrup_in_cup_large.jpg">
+            <source class="products-section-img" media="(min-width: 1024px)"
+                    srcset="assets/images/medium/syrup_in_cup_medium.jpg">
+            <img class="products-section-img" src="assets/images/small/syrup_in_cup_small.jpg" alt="syrup in cup">
         </picture>
     </section>
     <section class="section story-section">
@@ -150,14 +147,14 @@
         </div>
     </section>
     <section class="section decor-section">
-        <div class="container container-for-bottom-running-line">
+        <div class="container container-for-bottom-running-line" id="bottom-running-line">
             <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
             <p>download our media kit</p>
             <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
             <p>CONTACT FOR PARTNERSHIP OPPORTUNITIES</p>
         </div>
         <picture>
-            <source class="bottom-foreign-text" media="(min-width: 1024px)"
+            <source class="bottom-foreign-text" media="(min-width: 414px)"
                     srcset="assets/images/vector/foreign_text_on_background_desktop.svg">
             <img class="bottom-foreign-text" src="assets/images/vector/foreign_text_on_background_mobile.svg"
                  alt="foreign text on green background">

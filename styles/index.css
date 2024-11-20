@@ -1,15 +1,23 @@
+/*общие*/
 * {
     text-transform: uppercase;
-    font-family: 'RobotoFont', sans-serif;
+    font-family: var(--primary-font), sans-serif;
     text-decoration: none;
     font-weight: normal;
     color: black;
 }
-
 main {
-    margin-top: 6vw;
-    width: 100vw;
+    margin-top: 7vw;
+    width: 98vw;
     border: solid 0.1vw black;
+}
+body {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+section {
+    display: grid;
+    width: 98vw;
 }
 
 /*стилизация хедера*/
@@ -21,8 +29,9 @@ main {
     position: fixed;
     background-color: white;
     z-index: 3;
-    width: 100vw;
-    border-bottom: solid 0.1vw black;
+    width: 98vw;
+    height: 7vw;
+    border: solid 0.1vw black;
 }
 ul {
     display: flex;
@@ -38,8 +47,8 @@ ul li a, ul li button {
     font-size: 1vw;
 }
 ul li {
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+    display: flex;
+    align-content: center;
 }
 button {
     background-color: var(--primary);
@@ -52,38 +61,28 @@ button {
     width: 12vw;
 }
 
-
-/*стилизация секций*/
-.section {
-    display: grid;
-    border: solid 0.1vw black;
-}
-.section > * {
-    border: solid 0.1vw black;
-}
-
-
 /*стилизация верхней секции*/
 .info-section {
-    display: flex;
-    width: 100vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 .left-column, .right-column {
     display: inline-block;
-    width: 50vw;
 }
-
+.left-column {
+    border-right: solid 0.1vw black;
+}
 .left-column img, .right-column img {
-    width: 48vw;
+    width: 47vw;
     padding: 1vw;
 }
 h1 {
-    border: solid 0.1vw black;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    border-bottom: solid 0.1vw black;
+    padding-left: 4vw;
+    padding-right: 4vw;
     padding-top: 2vw;
     padding-bottom: 2vw;
-    font-size: 4vw;
+    font-size: 4.2vw;
     text-align: center;
 }
 
@@ -92,14 +91,21 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
-    border: solid 0.1vw black;
+    width: 98vw;
+    border-top: solid 0.1vw black;
+    border-bottom: solid 0.1vw black;
+}
+#bottom-running-line {
+    border-bottom: none;
+}
+.container-for-slogan img{
+    width: 15vw;
 }
 .container-for-bottom-running-line img, .container-for-running-line img {
-    width: 10vw;
+    width: 5vw;
 }
 .container-for-running-line {
-    width: 50vw;
+    width: 49vw;
 }
 .container-for-running-line p, .container-for-bottom-running-line p {
     font-size: 1.7vw;
@@ -107,60 +113,91 @@ h1 {
     padding-bottom: 1.5vw;
 }
 .container-for-slogan > * {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     margin: 4vw;
     text-align: center;
 }
 
 /*стилизация карточек товара*/
+.container-for-cards, .container-for-fires {
+    justify-content: space-between;
+    display: flex;
+    width: 98vw;
+}
+.container-for-fires {
+    align-items: flex-start;
+}
+.container-for-products-cards-and-fires {
+    width: 98vw;
+    height: 50vw;
+    display: inline-block;
+    position: relative;
+}
+.products-section-img {
+    display: flex;
+    width: 96vw;
+    padding-left: 1vw;
+    padding-bottom: 1vw;
+}
 .container-for-cards {
     justify-content: space-around;
-    display: flex;
-    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    top: 3vw;
+}
+.container-for-fires img {
+    padding: 2vw;
+    width: 5vw;
 }
 .product-card {
     position: relative;
     display: grid;
-    padding: 2vw;
+}
+.product-card img {
+    width: 30vw;
 }
 .container-for-product-info {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 8vw;
-    left: 3.3vw;
+    left: 1vw;
     text-align: center;
+    width: 28vw;
+}
+.container-for-product-info img {
+    width: 27vw;
 }
 .product-description {
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     margin: 1vw;
 }
 .product-name{
-    font-size: 1.7vw;
+    font-size: 2.3vw;
     margin: 1vw;
 }
 
-
 /*cтилизация предпоследней секции*/
 .story-section {
-    display: flex;
-    width: 100vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container-for-story, .container-for-story-card {
+    border-top: solid 0.1vw black;
 }
 .container-for-story h2 {
-    padding-top: 2.5vw;
-    padding-bottom: 2.5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 3.3vw;
 }
 .container-for-story img {
-    width: 49.9vw;
+    width: 49vw;
 }
 .container-for-story-card{
-    display: flex;
     position: relative;
-    border: solid 0.1vw black;
-    border-bottom: none;
-    width: 50vw;
-    height: 50vw;
+    width: 49vw;
+    height: 49vw;
+    border-left: solid 0.1vw black;
 }
 .container-for-story-card h3 {
     position: absolute;
@@ -174,30 +211,34 @@ h1 {
     left: 10vw;
 }
 .container-for-story-card img, .container-for-story {
-    width: 50vw;
-    height: 50vw;
+    width: 49vw;
 }
-
 
 /*cтилизация последней секции*/
 .bottom-foreign-text {
-/*    width: 100vw;
+    width: 97.9vw;
     position: absolute;
-    z-index: 1;
-    display: grid;*/
+    z-index: 2;
+    top: -7.5vw;
 }
 .decor-section {
     position: relative;
 }
 
 /*стилизация футера*/
+footer {
+    border: solid 0.1vw black;
+    border-top: none;
+    padding-top: 53vw;
+    width: 98vw;
+}
 footer ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: var(--secondary);
-    width: 100vw;
+    width: 97.8vw;
 }
-footer {
-    border: solid 0.1vw black;
+footer ul li > *{
+    font-size: 1vw;
+    font-style: normal;
 }

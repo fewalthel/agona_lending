@@ -2,3 +2,8 @@ button:hover {
     background-color: black;
     transition: 1s;
 }
+
+.navigation ul li a:hover {
+    color: var(--primary);
+    transition: 1s;
+}
