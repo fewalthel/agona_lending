@@ -1,1 +1,6 @@
-/* Здесь должны подключаться шрифты с помощью @font-face. Удалите этот комментарий при начала разработки */
+@font-face {
+    font-family: 'RobotoFont';
+    src: url('Roboto/Roboto-Medium.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
