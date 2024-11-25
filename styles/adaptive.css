@@ -24,7 +24,7 @@
         position: fixed;
         z-index: 3;
     }
-    .container-for-visible_nav{
+    .container-for-visible_nav {
         box-sizing: border-box;
         background-color: white;
         width: 100vw;
@@ -38,7 +38,7 @@
         width: 10vw;
         height: 10vw;
     }
-    .container-for-visible_nav button img{
+    .container-for-visible_nav button img {
         width: 5vw;
         height: 5vw;
     }
@@ -47,20 +47,24 @@
         height: 10vw;
     }
     .navigation-mobile {
-        display: none;
+        display: none; 
         width: 100vw;
         background-color: white;
         border-bottom: solid 0.1vw black;
+        top: 0;
     }
-    .navigation-mobile ul li{
-        margin: 5vw;
-        margin-left: 3vw;
-    }
-    .navigation-mobile ul li a{
+    .navigation-mobile ul li > * {
+        padding: 3vw;
         text-decoration: none;
         font-size: 3.5vw;
     }
-    ul {
+    .navigation-mobile ul li:first-child {
+        padding-top: 2vw;
+    }
+    .navigation-mobile ul li:last-child {
+        padding-bottom: 2vw;
+    }
+    .navigation-mobile ul {
         list-style-type: none;
         display: inline;
     }
@@ -105,7 +109,7 @@
         font-size: 5.5vw;
         white-space: wrap;
     }
-    .container-for-slogan img{
+    .container-for-slogan img {
         width: 17vw;
         margin: 3vw;
     }
@@ -132,7 +136,7 @@
         height: 80vw;
         top: 12vw;
     }
-    .container-for-fires{
+    .container-for-fires {
         width: 210vw;
         height: 50vw;
         padding-top: 5vw;
@@ -208,10 +212,33 @@
         width: 100vw;
         padding: 3vw;
     }
-    footer ul li > *{
+    footer ul li > * {
         font-size: 3vw;
     }
     footer ul > li:nth-child(2) {
         padding-top: 10vw;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body, main, .header-for-desktop, .header-for-mobile, .container-for-visible_nav, .navigation-mobile, footer {
+        background-color: var(--dark-theme);
+    }
+    .container-for-bottom-running-line img, .container-for-running-line img, .container-for-slogan img, .logo, .container-for-fires {
+        filter: invert(1);
+    }
+    * {
+        color: white;
+    }
+    button {
+        background-color: var(--primary-dark);
+    }
+    .container-for-product-info > *, .container-for-story-card > *, footer * {
+        color: black;
+    }
+    main, .container-for-visible_nav, .navigation-mobile, .container-for-running-line,
+    .container-for-slogan, h1, .container-for-bottom-running-line, footer,
+    .container-for-story,.container-for-story-card, .left-column, .header-for-desktop {
+        border-color: white;
     }
 }
