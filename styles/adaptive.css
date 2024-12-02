@@ -12,6 +12,9 @@
     section {
         width: 100vw;
     }
+    html {
+        scroll-padding-top: 17vw;
+    }
 
     /* стилизация хедера */
     .header-for-desktop {
@@ -21,18 +24,21 @@
         top: 0;
         display: block;
         width: 100vw;
-        position: fixed;
-        z-index: 3;
+        position: relative;
     }
     .container-for-visible_nav {
+        position: fixed;
         box-sizing: border-box;
         background-color: white;
         width: 100vw;
+        height: 17vw;
         border-bottom: solid 0.1vw black;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 3vw;
+        z-index: 3;
+        top: 0;
     }
     .container-for-visible_nav button {
         width: 10vw;
@@ -47,11 +53,20 @@
         height: 10vw;
     }
     .navigation-mobile {
-        display: none; 
+        position: fixed;
         width: 100vw;
         background-color: white;
         border-bottom: solid 0.1vw black;
-        top: 0;
+        left: 0;
+        display: none;
+        top: 17vw;
+    }
+    .checkbox {
+        transform: scale(4);
+        position: absolute;
+        left: 7vw;
+        top: 7.5vw;
+        opacity: 0;
     }
     .navigation-mobile ul li > * {
         padding: 3vw;
@@ -75,10 +90,12 @@
     }
 
     /*стилизация грид-секций*/
-    .info-section, .story-section {
+    .info-section,
+    .story-section {
         grid-template-columns: 100%;
     }
-    .left-column img, .right-column img {
+    .left-column img,
+    .right-column img {
         width: 100vw;
         padding: 3vw;
         padding-bottom: 1.8vw;
@@ -97,32 +114,33 @@
     }
 
     /*стилизация бегущих строк и строки со слоганом*/
-    .container-for-bottom-running-line, .container-for-running-line, .container-for-slogan {
+    .container-for-bottom-running-line,
+    .container-for-running-line,
+    .container-for-slogan {
         width: 100vw;
-        white-space: nowrap;
-        overflow: hidden;
     }
-    .container-for-slogan > * {
-        margin: 0;
-        margin-top: 8vw;
-        margin-bottom: 8vw;
-        font-size: 5.5vw;
-        white-space: wrap;
-    }
-    .container-for-slogan img {
-        width: 17vw;
-        margin: 3vw;
-    }
-    .container-for-bottom-running-line img, .container-for-running-line img {
+    .container-for-items-of-running-line img {
         width: 22vw;
+        padding: 2.5vw;
+        box-sizing: border-box;
     }
-    .container-for-running-line p, .container-for-bottom-running-line p {
+    .container-for-items-of-running-line p {
         font-size: 4vw;
         padding-top: 6vw;
         padding-bottom: 6vw;
     }
     .container-for-bottom-running-line {
         border-bottom: solid 0.1vw black;;
+    }
+    .container-for-slogan > * {
+        margin: 0;
+        margin-top: 8vw;
+        margin-bottom: 8vw;
+        font-size: 5.5vw;
+    }
+    .container-for-slogan img {
+        width: 17vw;
+        margin: 3vw;
     }
 
     /*стилизация секции с карточками товаров*/
@@ -184,14 +202,19 @@
         height: 100vw;
         border-left: none;
     }
+    .container-for-story-card p {
+        padding-bottom: 3.5vw;
+    }
     .container-for-story-card h3 {
         width: 60vw;
         height: 60vw;
         font-size: 2.73vw;
-        top: 21vw;
+        top: 20vw;
         left: 20vw;
     }
-    .container-for-story-card img, .container-for-story, .container-for-story img {
+    .container-for-story-card img,
+    .container-for-story,
+    .container-for-story img {
         width: 100vw;
     }
 
@@ -208,23 +231,31 @@
         padding-top: 54.3vw;
         width: 100vw;
     }
-    footer ul {
+    footer address {
         width: 100vw;
-        padding: 3vw;
-    }
-    footer ul li > * {
         font-size: 3vw;
+        padding: 4vw;
     }
-    footer ul > li:nth-child(2) {
-        padding-top: 10vw;
+    footer address :nth-child(2) {
+        padding-top: 7vw;
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    body, main, .header-for-desktop, .header-for-mobile, .container-for-visible_nav, .navigation-mobile, footer {
+    body,
+    main,
+    .header-for-desktop,
+    .header-for-mobile,
+    .container-for-visible_nav,
+    .navigation-mobile,
+    footer {
         background-color: var(--dark-theme);
     }
-    .container-for-bottom-running-line img, .container-for-running-line img, .container-for-slogan img, .logo, .container-for-fires {
+    .container-for-bottom-running-line img,
+    .container-for-running-line img,
+    .container-for-slogan img,
+    .logo,
+    .container-for-fires {
         filter: invert(1);
     }
     * {
@@ -233,12 +264,29 @@
     button {
         background-color: var(--primary-dark);
     }
-    .container-for-product-info > *, .container-for-story-card > *, footer * {
+    .container-for-product-info > *,
+    .container-for-story-card > *,
+    footer * {
         color: black;
     }
-    main, .container-for-visible_nav, .navigation-mobile, .container-for-running-line,
-    .container-for-slogan, h1, .container-for-bottom-running-line, footer,
-    .container-for-story,.container-for-story-card, .left-column, .header-for-desktop {
+    main,
+    .container-for-visible_nav,
+    .navigation-mobile,
+    .container-for-running-line,
+    .container-for-slogan,
+    h1,
+    .container-for-bottom-running-line,
+    footer,
+    .container-for-story,
+    .container-for-story-card,
+    .left-column,
+    .header-for-desktop {
         border-color: white;
+    }
+}
+
+@media(prefers-reduced-motion: reduce) {
+    .container-for-items-of-running-line {
+        animation: none;
     }
 }
