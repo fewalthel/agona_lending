@@ -24,22 +24,34 @@
         top: 0;
         display: block;
         width: 100vw;
-        position: fixed;
-        z-index: 3;
+        position: relative;
     }
     .container-for-visible_nav {
+        position: fixed;
         box-sizing: border-box;
         background-color: white;
         width: 100vw;
+        height: 17vw;
         border-bottom: solid 0.1vw black;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 3vw;
+        z-index: 3;
+        top: 0;
     }
     .container-for-visible_nav button {
         width: 10vw;
         height: 10vw;
+        background-size: 5vw;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .burger-menu-button{
+        background-image: url('../assets/images/vector/menu.svg');
+    }
+    .users-button {
+        background-image: url('../assets/images/vector/users.svg');
     }
     .container-for-visible_nav button img {
         width: 5vw;
@@ -50,11 +62,23 @@
         height: 10vw;
     }
     .navigation-mobile {
-        display: none; 
+        position: fixed;
         width: 100vw;
+        overflow: hidden;
+        left: 0;
+        top: 17vw;
+    }
+    .dropdown-menu {
         background-color: white;
         border-bottom: solid 0.1vw black;
-        top: 0;
+        transform: translateY(-150%);
+    }
+    .checkbox {
+        transform: scale(4);
+        position: absolute;
+        left: 7vw;
+        top: 7.5vw;
+        opacity: 0;
     }
     .navigation-mobile ul li > * {
         padding: 3vw;
@@ -106,15 +130,25 @@
     .container-for-running-line,
     .container-for-slogan {
         width: 100vw;
-        white-space: nowrap;
-        overflow: hidden;
+    }
+    .container-for-items-of-running-line img {
+        width: 22vw;
+        padding: 2.5vw;
+        box-sizing: border-box;
+    }
+    .container-for-items-of-running-line p {
+        font-size: 4vw;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+    }
+    .container-for-bottom-running-line {
+        border-bottom: solid 0.1vw black;;
     }
     .container-for-slogan > * {
         margin: 0;
         margin-top: 8vw;
         margin-bottom: 8vw;
         font-size: 5.5vw;
-        white-space: wrap;
     }
     .container-for-slogan img {
         width: 17vw;
@@ -222,16 +256,14 @@
         padding-top: 54.3vw;
         width: 100vw;
     }
-    address {
-        border-top: solid 0.1vw black;
+
+    footer address {
         width: 100vw;
-        padding: 3vw;
+        font-size: 3.5vw;
+        padding: 4vw;
     }
-    address > * {
-        font-size: 3vw;
-    }
-    address p {
-        padding-top: 10vw;
+    footer address p {
+        padding-top: 7vw;
     }
 }
 
@@ -241,7 +273,7 @@
     .header-for-desktop,
     .header-for-mobile,
     .container-for-visible_nav,
-    .navigation-mobile, 
+    .dropdown-menu,
     footer {
         background-color: var(--dark-theme);
     }
@@ -259,13 +291,13 @@
         background-color: var(--primary-dark);
     }
     .container-for-product-info > *,
-    .container-for-story-card > *,
+    h3 p,
     footer * {
         color: black;
     }
     main,
     .container-for-visible_nav,
-    .navigation-mobile,
+    .dropdown-menu,
     .container-for-running-line,
     .container-for-slogan,
     h1,
@@ -276,5 +308,11 @@
     .left-column,
     .header-for-desktop {
         border-color: white;
+    }
+}
+
+@media(prefers-reduced-motion: reduce) {
+    .container-for-items-of-running-line {
+        animation: none;
     }
 }

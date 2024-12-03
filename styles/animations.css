@@ -1,9 +1,35 @@
-button:hover {
+.navigation-desktop ul li button:hover {
     background-color: black;
     transition: 1s;
 }
 
-.navigation ul li a:hover {
+.navigation-desktop ul li a:hover {
     color: var(--primary);
     transition: 1s;
+}
+
+.checkbox:checked ~ .navigation-mobile .dropdown-menu {
+    animation: dropdown 1s ease-in-out forwards;
+}
+
+.checkbox:checked + label .burger-menu-button {
+    background-image: url('../assets/images/vector/close.svg');
+}
+
+@keyframes run {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-60%);
+    }
+}
+
+@keyframes dropdown {
+    0% {
+        transform: translateY(-150%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }

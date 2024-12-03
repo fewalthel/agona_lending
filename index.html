@@ -32,18 +32,25 @@
     </div>
     <div class="header-for-mobile">
         <div class="container container-for-visible_nav">
-            <button><img src="assets/images/vector/menu.svg" alt="sign of menu"></button>
+            <input id="checkbox" class="checkbox" type="checkbox">
+            <label for="checkbox">
+                <button class="burger-menu-button"></button>
+            </label>
+
+            <nav class="navigation-mobile">
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="">story</a></li>
+                        <li><a href="">shop</a></li>
+                        <li><a href="">contact</a></li>
+                        <li><a href="">wholesale</a></li>
+                    </ul>
+                </div>
+            </nav>
+
             <a href="#top"><img class="logo" src="assets/images/vector/mobile_logo.svg" alt="logo for mobile"></a>
-            <button><img src="assets/images/vector/users.svg" alt="sign of users"></button>
+            <button class="users-button"></button>
         </div>
-        <nav class="navigation-mobile">
-            <ul>
-                <li><a href="">story</a></li>
-                <li><a href="">shop</a></li>
-                <li><a href="">contact</a></li>
-                <li><a href="">wholesale</a></li>
-            </ul>
-        </nav>
     </div>
 </header>
 <main>
@@ -54,8 +61,18 @@
                 <img src="assets/images/vector/foreign_text_mobile.svg" alt="foreign text">
             </picture>
             <div class="container container-for-running-line">
-                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
-                <p>put some fire in your belly</p>
+                <div class="container container-for-items-of-running-line">
+                    <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                    <p>put some fire in your belly</p>
+                    <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                    <p>put some fire in your belly</p>
+                    <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                    <p>put some fire in your belly</p>
+                    <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                    <p>put some fire in your belly</p>
+                    <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                    <p>put some fire in your belly</p>
+                </div>
             </div>
             <picture>
                 <source media="(min-width: 1440px)" srcset="assets/images/large/syrup_around_cups_large.jpg">
@@ -114,8 +131,28 @@
             </div>
         </div>
         <div class="container container-for-bottom-running-line">
-            <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
-            <p>put some fire in your belly</p>
+            <div class="container container-for-items-of-running-line">
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>put some fire in your belly</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>put some fire in your belly</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>put some fire in your belly</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>put some fire in your belly</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>put some fire in your belly</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>put some fire in your belly</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>put some fire in your belly</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>put some fire in your belly</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>put some fire in your belly</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>put some fire in your belly</p>
+            </div>
         </div>
         <picture>
             <source class="products-section-img" media="(min-width: 1440px)"
@@ -137,23 +174,43 @@
         <div class="container container-for-story-card">
             <img src="assets/images/vector/background_for_text.svg"
                  alt="background for text in the form of an octagon with jars and rabbits">
-                 <h3><p>HELLO, I’M LAUREN AND AS A LIFELONG ADVENTUROUS EATER, I’VE TRIED A LOT OF CRAZY THINGS, BUT I NEVER
-                    THOUGHT HOT SAUCE IN COFFEE WAS A SANE OPTION UNTIL A FRIEND DARED ME TO TRY IT.</p>
-                    <p>AND IT SUCKED.</p>
-                    <p>BUT I WONDERED IF THERE WAS A WAY TO ADD SPICE TO MY COFFEE. WHEN THERE WAS NO EASY SOLUTION, UJJO
-                        WAS BORN.</p>
-                    <p>UJJO (OOO-JOE): THE WORD FOR “FIRE” IN KONKANI, SPOKEN ON THE WEST COAST OF INDIA, IS AN HOMAGE AND A
-                        LOVE LETTER TO MY DAD, AN INDIAN IMMIGRANT WHO INSTILLED A FIRE IN MY PALATE – AND MY HEART – FROM
-                        THE VERY BEGINNING.</p>
-                </h3>
+            <h3><p>HELLO, I’M LAUREN AND AS A LIFELONG ADVENTUROUS EATER, I’VE TRIED A LOT OF CRAZY THINGS, BUT I NEVER
+                THOUGHT HOT SAUCE IN COFFEE WAS A SANE OPTION UNTIL A FRIEND DARED ME TO TRY IT.</p>
+                <p>AND IT SUCKED.</p>
+                <p>BUT I WONDERED IF THERE WAS A WAY TO ADD SPICE TO MY COFFEE. WHEN THERE WAS NO EASY SOLUTION, UJJO
+                    WAS BORN.</p>
+                <p>UJJO (OOO-JOE): THE WORD FOR “FIRE” IN KONKANI, SPOKEN ON THE WEST COAST OF INDIA, IS AN HOMAGE AND A
+                    LOVE LETTER TO MY DAD, AN INDIAN IMMIGRANT WHO INSTILLED A FIRE IN MY PALATE – AND MY HEART – FROM
+                    THE VERY BEGINNING.</p>
+            </h3>
         </div>
     </section>
     <section class="section decor-section">
         <div class="container container-for-bottom-running-line" id="bottom-running-line">
-            <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
-            <p>download our media kit</p>
-            <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
-            <p>CONTACT FOR PARTNERSHIP OPPORTUNITIES</p>
+            <div class="container container-for-items-of-running-line">
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>download our media kit</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>CONTACT FOR PARTNERSHIP OPPORTUNITIES</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>download our media kit</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>CONTACT FOR PARTNERSHIP OPPORTUNITIES</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>download our media kit</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>CONTACT FOR PARTNERSHIP OPPORTUNITIES</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>download our media kit</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>CONTACT FOR PARTNERSHIP OPPORTUNITIES</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>download our media kit</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>CONTACT FOR PARTNERSHIP OPPORTUNITIES</p>
+                <img src="assets/images/vector/pepper.svg" alt="picture of pepper">
+                <p>download our media kit</p>
+            </div>
         </div>
         <picture>
             <source class="bottom-foreign-text" media="(min-width: 414px)"
