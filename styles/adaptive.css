@@ -43,6 +43,15 @@
     .container-for-visible_nav button {
         width: 10vw;
         height: 10vw;
+        background-size: 5vw;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .burger-menu-button{
+        background-image: url('../assets/images/vector/menu.svg');
+    }
+    .users-button {
+        background-image: url('../assets/images/vector/users.svg');
     }
     .container-for-visible_nav button img {
         width: 5vw;
@@ -55,11 +64,14 @@
     .navigation-mobile {
         position: fixed;
         width: 100vw;
+        overflow: hidden;
+        left: 0;
+        top: 17vw;
+    }
+    .dropdown-menu {
         background-color: white;
         border-bottom: solid 0.1vw black;
-        left: 0;
-        display: none;
-        top: 17vw;
+        transform: translateY(-150%);
     }
     .checkbox {
         transform: scale(4);
@@ -233,10 +245,10 @@
     }
     footer address {
         width: 100vw;
-        font-size: 3vw;
+        font-size: 3.5vw;
         padding: 4vw;
     }
-    footer address :nth-child(2) {
+    footer address p {
         padding-top: 7vw;
     }
 }
@@ -247,7 +259,7 @@
     .header-for-desktop,
     .header-for-mobile,
     .container-for-visible_nav,
-    .navigation-mobile,
+    .dropdown-menu,
     footer {
         background-color: var(--dark-theme);
     }
@@ -265,13 +277,13 @@
         background-color: var(--primary-dark);
     }
     .container-for-product-info > *,
-    .container-for-story-card > *,
+    h3 p,
     footer * {
         color: black;
     }
     main,
     .container-for-visible_nav,
-    .navigation-mobile,
+    .dropdown-menu,
     .container-for-running-line,
     .container-for-slogan,
     h1,
