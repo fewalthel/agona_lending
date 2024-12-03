@@ -12,6 +12,9 @@
     section {
         width: 100vw;
     }
+    html {
+        scroll-padding-top: 17vw;
+    }
 
     /* стилизация хедера */
     .header-for-desktop {
@@ -75,10 +78,12 @@
     }
 
     /*стилизация грид-секций*/
-    .info-section, .story-section {
+    .info-section,
+    .story-section {
         grid-template-columns: 100%;
     }
-    .left-column img, .right-column img {
+    .left-column img,
+    .right-column img {
         width: 100vw;
         padding: 3vw;
         padding-bottom: 1.8vw;
@@ -97,7 +102,9 @@
     }
 
     /*стилизация бегущих строк и строки со слоганом*/
-    .container-for-bottom-running-line, .container-for-running-line, .container-for-slogan {
+    .container-for-bottom-running-line,
+    .container-for-running-line,
+    .container-for-slogan {
         width: 100vw;
         white-space: nowrap;
         overflow: hidden;
@@ -113,10 +120,12 @@
         width: 17vw;
         margin: 3vw;
     }
-    .container-for-bottom-running-line img, .container-for-running-line img {
+    .container-for-bottom-running-line img,
+    .container-for-running-line img {
         width: 22vw;
     }
-    .container-for-running-line p, .container-for-bottom-running-line p {
+    .container-for-running-line p,
+    .container-for-bottom-running-line p {
         font-size: 4vw;
         padding-top: 6vw;
         padding-bottom: 6vw;
@@ -184,14 +193,19 @@
         height: 100vw;
         border-left: none;
     }
+    .container-for-story-card p {
+        padding-bottom: 3.3vw;
+    }
     .container-for-story-card h3 {
         width: 60vw;
         height: 60vw;
         font-size: 2.73vw;
-        top: 21vw;
+        top: 20vw;
         left: 20vw;
     }
-    .container-for-story-card img, .container-for-story, .container-for-story img {
+    .container-for-story-card img,
+    .container-for-story,
+    .container-for-story img {
         width: 100vw;
     }
 
@@ -208,23 +222,34 @@
         padding-top: 54.3vw;
         width: 100vw;
     }
-    footer ul {
+    address {
+        border-top: solid 0.1vw black;
         width: 100vw;
         padding: 3vw;
     }
-    footer ul li > * {
+    address > * {
         font-size: 3vw;
     }
-    footer ul > li:nth-child(2) {
+    address p {
         padding-top: 10vw;
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    body, main, .header-for-desktop, .header-for-mobile, .container-for-visible_nav, .navigation-mobile, footer {
+    body,
+    main,
+    .header-for-desktop,
+    .header-for-mobile,
+    .container-for-visible_nav,
+    .navigation-mobile, 
+    footer {
         background-color: var(--dark-theme);
     }
-    .container-for-bottom-running-line img, .container-for-running-line img, .container-for-slogan img, .logo, .container-for-fires {
+    .container-for-bottom-running-line img,
+    .container-for-running-line img,
+    .container-for-slogan img,
+    .logo,
+    .container-for-fires {
         filter: invert(1);
     }
     * {
@@ -233,12 +258,23 @@
     button {
         background-color: var(--primary-dark);
     }
-    .container-for-product-info > *, .container-for-story-card > *, footer * {
+    .container-for-product-info > *,
+    .container-for-story-card > *,
+    footer * {
         color: black;
     }
-    main, .container-for-visible_nav, .navigation-mobile, .container-for-running-line,
-    .container-for-slogan, h1, .container-for-bottom-running-line, footer,
-    .container-for-story,.container-for-story-card, .left-column, .header-for-desktop {
+    main,
+    .container-for-visible_nav,
+    .navigation-mobile,
+    .container-for-running-line,
+    .container-for-slogan,
+    h1,
+    .container-for-bottom-running-line,
+    footer,
+    .container-for-story,
+    .container-for-story-card,
+    .left-column,
+    .header-for-desktop {
         border-color: white;
     }
 }

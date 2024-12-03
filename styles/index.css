@@ -6,6 +6,10 @@
     font-weight: normal;
     color: black;
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 7vw;
+}
 main {
     margin-top: 7vw;
     width: 98vw;
@@ -39,7 +43,8 @@ ul {
     align-items: center;
     list-style-type: none;
 }
-.navigation-desktop ul li a, .navigation-desktop ul li button {
+.navigation-desktop ul li a,
+.navigation-desktop ul li button {
     padding-top: 1vw;
     padding-bottom: 1vw;
     padding-left: 2vw;
@@ -65,7 +70,8 @@ button {
 .info-section {
     grid-template-columns: 50% 50%;
 }
-.left-column, .right-column {
+.left-column,
+.right-column {
     display: inline-block;
 }
 .left-column {
@@ -86,7 +92,9 @@ h1 {
 }
 
 /*cтилизация бегущих строк и строки со слоганом*/
-.container-for-bottom-running-line, .container-for-running-line, .container-for-slogan {
+.container-for-bottom-running-line,
+.container-for-running-line,
+.container-for-slogan {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -100,13 +108,15 @@ h1 {
 .container-for-slogan img{
     width: 15vw;
 }
-.container-for-bottom-running-line img, .container-for-running-line img {
+.container-for-bottom-running-line img,
+.container-for-running-line img {
     width: 5vw;
 }
 .container-for-running-line {
     width: 49vw;
 }
-.container-for-running-line p, .container-for-bottom-running-line p {
+.container-for-running-line p,
+.container-for-bottom-running-line p {
     font-size: 1.7vw;
     padding-top: 1.5vw;
     padding-bottom: 1.5vw;
@@ -118,7 +128,8 @@ h1 {
 }
 
 /*стилизация карточек товара*/
-.container-for-cards, .container-for-fires {
+.container-for-cards,
+.container-for-fires {
     justify-content: space-between;
     display: flex;
     width: 98vw;
@@ -180,7 +191,8 @@ h1 {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-.container-for-story, .container-for-story-card {
+.container-for-story,
+.container-for-story-card {
     border-top: solid 0.1vw black;
 }
 .container-for-story h2 {
@@ -195,18 +207,22 @@ h1 {
     height: 49vw;
     border-left: solid 0.1vw black;
 }
+.container-for-story-card p {
+    padding-bottom: 2vw;
+}
 .container-for-story-card h3 {
     position: absolute;
     z-index: 2;
-    width: 30vw;
-    height: 31vw;
-    font-size: 1.34vw;
+    font-size: 1.3vw;
     text-align: center;
     word-break: break-word;
-    top: 11vw;
+    top: 10vw;
     left: 10vw;
+    width: 28.6vw;
 }
-.container-for-story-card img, .container-for-story, .container-for-story img {
+.container-for-story-card img,
+.container-for-story,
+.container-for-story img {
     width: 49vw;
 }
 
@@ -228,7 +244,7 @@ footer {
     padding-top: 53.19vw;
     width: 98vw;
 }
-footer ul {
+address {
     border-top: solid 0.1vw black;
     padding: 1vw;
     box-sizing: border-box;
@@ -237,7 +253,7 @@ footer ul {
     background-color: var(--secondary);
     width: 97.8vw;
 }
-footer ul li > *{
+footer  > * {
     font-size: 1vw;
     font-style: normal;
 }
