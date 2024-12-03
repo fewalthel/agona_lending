@@ -228,13 +228,12 @@ h1 {
 .container-for-story-card h3 {
     position: absolute;
     z-index: 2;
-    width: 30vw;
-    height: 31vw;
-    font-size: 1.34vw;
+    font-size: 1.3vw;
     text-align: center;
     word-break: break-word;
     top: 10vw;
     left: 10vw;
+    width: 28.6vw;
 }
 .container-for-story-card img,
 .container-for-story,
@@ -260,6 +259,7 @@ footer {
     padding-top: 53.19vw;
     width: 98vw;
 }
+
 footer address {
     font-style: normal;
     border-top: solid 0.1vw black;

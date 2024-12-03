@@ -154,6 +154,19 @@
         width: 17vw;
         margin: 3vw;
     }
+    .container-for-bottom-running-line img,
+    .container-for-running-line img {
+        width: 22vw;
+    }
+    .container-for-running-line p,
+    .container-for-bottom-running-line p {
+        font-size: 4vw;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+    }
+    .container-for-bottom-running-line {
+        border-bottom: solid 0.1vw black;;
+    }
 
     /*стилизация секции с карточками товаров*/
     .container-for-products-cards-and-fires {
@@ -215,7 +228,7 @@
         border-left: none;
     }
     .container-for-story-card p {
-        padding-bottom: 3.5vw;
+        padding-bottom: 3.3vw;
     }
     .container-for-story-card h3 {
         width: 60vw;
@@ -243,6 +256,7 @@
         padding-top: 54.3vw;
         width: 100vw;
     }
+
     footer address {
         width: 100vw;
         font-size: 3.5vw;
